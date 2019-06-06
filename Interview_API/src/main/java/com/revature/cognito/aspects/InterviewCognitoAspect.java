@@ -21,10 +21,10 @@ import com.revature.cognito.utils.CognitoUtil;
 
 @Aspect
 @Component
-public class CognitoAspect {
+public class InterviewCognitoAspect {
 
-	@Value("${spring.profiles}")
-	private String stage;
+	//@Value("${spring.profiles}")
+	private String stage = "dev";
 
 	@Autowired
 	private CognitoUtil cUtil;
